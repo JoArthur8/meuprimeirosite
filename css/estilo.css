@@ -6,6 +6,7 @@ body {
 
     background-color: black;
 color: greenyellow;
+color: rgb(255, 37, 153);
 
 }
 img{
@@ -26,12 +27,28 @@ section{
 
     padding: 2%;
 }
+.logo {
+    width: 130%;
+    text-align: center;
+}
 h1{
     font-size: 200%;
     padding-bottom: 1%;
 }
 h2 {
     font-size: 150%;
+    padding: 1%;
+}
+table {
+    border-collapse: collapse;
+    width: 75%;
+}
+th {
+    font-size: 200%;
+}
+td , th{
+    border: 1px;
+    text-align: center;
     padding: 1%;
 }
 
