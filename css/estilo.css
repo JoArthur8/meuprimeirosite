@@ -5,9 +5,7 @@ body {
     font-style: normal;
 
     background-color: black;
-color: greenyellow;
-color: rgb(255, 37, 153);
-
+    color: rgb(255, 37, 153);
 }
 img{
 width: 17%;
@@ -16,27 +14,30 @@ main{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    background-color: black;
+    text-align: center;
 }
 header{
     padding: 3%;
+    text-align: center;
 }
 footer{
     padding: 3%;
 }
 section{
 
-    padding: 2%;
+padding: 2%;
 }
-.logo {
-    width: 130%;
-    text-align: center;
+
+.logo{
+    width: 50%;
 }
 h1{
-    font-size: 200%;
+    font-size: 3em;
     padding-bottom: 1%;
 }
 h2 {
-    font-size: 150%;
+    font-size: 2em;
     padding: 1%;
 }
 table {
@@ -51,6 +52,12 @@ td , th{
     text-align: center;
     padding: 1%;
 }
-
-  
-  
+.titulos {
+    line-height: 3;
+}
+p,li,ul {
+    line-height: 1.5;
+}
+.img {
+    width: 25%;
+}
