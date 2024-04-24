@@ -30,6 +30,7 @@ padding: 2%;
 }
 
 .logo{
+    text-align: center;
     width: 50%;
 }
 h1{
@@ -59,5 +60,6 @@ p,li,ul {
     line-height: 1.5;
 }
 .img {
+    text-align: center;
     width: 25%;
 }
