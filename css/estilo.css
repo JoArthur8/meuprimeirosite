@@ -86,3 +86,17 @@ a:link{
 a:visited{
     color:black;
 }
+.linha{
+    display: flex;
+    flex-flow: row wrap;
+}
+.col-3{
+
+width: 25%;
+}
+
+.col-3 p{
+
+    font-size: 1rem;
+    text-align: center;
+}
