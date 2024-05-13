@@ -89,6 +89,8 @@ a:visited{
 .linha{
     display: flex;
     flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 .col-3{
 
@@ -99,4 +101,10 @@ width: 25%;
 
     font-size: 1rem;
     text-align: center;
+}
+.galerias{
+
+    width: 90%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
