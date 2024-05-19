@@ -4,8 +4,8 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
 
-    background-color: black;
-    color: rgb(255, 37, 153);
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 234, 8);
 }
 img{
 width: 17%;
@@ -14,7 +14,7 @@ main{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: black;
+    background-color: rgb(73, 156, 159);
     text-align: center;
 }
 header{
@@ -61,32 +61,14 @@ td , th{
 p,li,ul {
     line-height: 1.5;
 }
+.Portrait{
+    text-align: left;
+    width: 70%;
+}
 .img {
     text-align: center;
     width: 30%;
     margin-left:85%;
-}
-.navbar{
-    background-color: black;
-    color: rgb(255, 37, 153);
-    border-width: 3px;
-    border-color: rgb(255, 37, 153);
-    border-style: solid;
-    overflow: hidden;
-    display: flex;
-}
-.navbar_link{
-    padding-right: 8px;
-    color: black;
-    border-style: solid;
-    background-color: rgb(255, 37, 153);
-    display: inline-block;
-}
-a:link{
-    color:black;
-}
-a:visited{
-    color:black;
 }
 .linha{
     display: flex;
