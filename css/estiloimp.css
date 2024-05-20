@@ -15,7 +15,7 @@ main{
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(73, 156, 159);
-    text-align: center;
+    text-align: justify;
 }
 header{
     padding: 3%;
@@ -56,19 +56,21 @@ td , th{
     padding: 1%;
 }
 .titulos {
+    text-align: center;
     line-height: 3;
 }
 p,li,ul {
     line-height: 1.5;
 }
-.Portrait{
-    text-align: left;
-    width: 70%;
-}
+
 .img {
     text-align: center;
     width: 30%;
     margin-left:85%;
+}
+.Portrait{
+    float: left;
+    width: 60%;
 }
 .linha{
     display: flex;
@@ -77,15 +79,11 @@ p,li,ul {
     margin-right: auto;
 }
 .col-3{
+    width: 25%;
+    padding: 1%;
 
-width: 25%;
 }
 
-.col-3 p{
-
-    font-size: 1rem;
-    text-align: center;
-}
 .galerias{
 
     width: 90%;
