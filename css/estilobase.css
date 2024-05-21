@@ -32,6 +32,7 @@ padding: 1%;
 .logo{
     text-align: center;
     width: 50%;
+    margin-left:25%;
 }
 h1{
     text-align: center;
@@ -81,7 +82,7 @@ li,ul {
 .img {
     text-align: center;
     width: 30%;
-    margin-left:85%;
+
 }
 .navbar{
     background-color: black;
@@ -91,6 +92,7 @@ li,ul {
     border-style: solid;
     overflow: hidden;
     display: flex;
+    flex-flow: row wrap;
 }
 .navbar_link{
     padding-right: 8px;
@@ -142,4 +144,9 @@ width: 25%;
     .col-3{
         width: 100%;
     }
+}
+
+.esquerda{
+    float:left;
+    margin-right: 1%;
 }
