@@ -30,7 +30,8 @@ padding: 1%;
 }
 
 .logo{
-    text-align: center;
+    justify-content: center;
+    margin-left: 25%;
     width: 50%;
 }
 h1{
@@ -64,13 +65,13 @@ p,li,ul {
 }
 
 .img {
-    text-align: center;
     width: 30%;
-    margin-left:85%;
+    
 }
 .Portrait{
     float: left;
-    width: 60%;
+    width: 20%;
+    padding-right: 5%;
 }
 .linha{
     display: flex;
@@ -80,7 +81,6 @@ p,li,ul {
 }
 .col-3{
     width: 25%;
-    padding: 1%;
 
 }
 
