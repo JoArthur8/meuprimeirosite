@@ -4,7 +4,10 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
 
-    background-color: rgb(255, 255, 255);
+    background-image: url("/img/ESK\ MKMEZQA\ AHYA.jpg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
     color: rgb(255, 234, 8);
 }
 img{
@@ -72,6 +75,7 @@ p,li,ul {
     float: left;
     width: 20%;
     padding-right: 5%;
+    clear: left;
 }
 .linha{
     display: flex;
@@ -89,4 +93,7 @@ p,li,ul {
     width: 90%;
     margin-left: 1%;
     margin-right: 1%;
+}
+.clearfix {
+    overflow: auto;
 }
