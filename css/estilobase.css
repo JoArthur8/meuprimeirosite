@@ -46,7 +46,7 @@ h2 {
 }
 table {
     clear: both;
-    border-spacing: 0;
+    border-spacing: 1;
     font-size: 1.2em;
     border-collapse: collapse;
     margin-left: auto;
@@ -54,6 +54,7 @@ table {
     margin-bottom: 3%;
     width: 80%;
     padding: 1%;
+    overflow-x: auto;
 }
 th {
     border: 10%;
