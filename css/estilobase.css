@@ -1,6 +1,11 @@
+@font-face {
+    font-family: VCR;
+    src: url(../font/VCR_OSD_MONO_1.001.ttf);
+}
+
 body {
     
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: VCR, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 
@@ -157,4 +162,44 @@ width: 25%;
 .esquerda{
     float:left;
     margin-right: 1%;
+}
+.Container{
+    position: relative;
+    overflow-x: auto;
+    white-space-collapse: collapse;
+}
+.enigma1{
+    width: 100%;
+    font-size: 1.2em;
+    color: dimgray;
+}
+
+.meio{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    opacity: 25%;
+}
+.meiobaixo{
+    position: absolute;
+    bottom: 5%;
+    font-size: 1,2em;
+    width: 75%;
+    text-align: center;
+    opacity: 30%;
+}
+.cimaesquerda{
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    text-align: center;
+    font-size: 3em;
+}
+
+.cimadireita{
+    position: absolute;
+    top: 2%;
+    right: 4%;
+    text-align: center;
 }
