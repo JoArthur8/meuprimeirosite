@@ -166,11 +166,10 @@ width: 25%;
 .Container{
     position: relative;
     overflow-x: auto;
-    white-space-collapse: collapse;
 }
 .enigma1{
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1.2vw;
     color: dimgray;
 }
 
@@ -183,8 +182,8 @@ width: 25%;
 }
 .meiobaixo{
     position: absolute;
-    bottom: 5%;
-    font-size: 1,2em;
+    bottom: 10%;
+    font-size: 1.2vw;
     width: 75%;
     text-align: center;
     opacity: 30%;

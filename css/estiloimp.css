@@ -26,6 +26,7 @@ header{
 }
 footer{
     padding: 3%;
+    background-color: blueviolet;
 }
 section{
 
@@ -65,6 +66,8 @@ td , th{
 }
 p,li,ul {
     line-height: 1.5;
+    text-align: justify;
+    font-size: 1.2vw;
 }
 
 .img {
