@@ -21,6 +21,7 @@ main{
     margin-right: auto;
     background-color: black;
     text-align: justify;
+    text-indent: 3%;
 }
 header{
     padding: 3%;
@@ -125,6 +126,10 @@ a:visited{
 
 width: 25%;
 }
+
+.col-4 {
+    width: 33.33%;
+}
 .col-9{
     width: 75%;
 }
@@ -165,7 +170,7 @@ width: 25%;
 }
 .Container{
     position: relative;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 .enigma1{
     width: 100%;
@@ -183,8 +188,8 @@ width: 25%;
 .meiobaixo{
     position: absolute;
     bottom: 10%;
-    font-size: 1.2vw;
-    width: 75%;
+    font-size: 0.9vw;
+    width: 100%;
     text-align: center;
     opacity: 30%;
 }
