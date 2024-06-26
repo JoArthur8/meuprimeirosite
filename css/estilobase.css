@@ -23,9 +23,19 @@ main{
     text-align: justify;
     text-indent: 3%;
 }
+main nav{
+    text-align: center;
+    text-indent: 0%;
+}
 header{
     padding: 3%;
     text-align: center;
+    
+}
+nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1%;
 }
 footer{
     padding: 3%;
@@ -77,6 +87,7 @@ td , th{
 .titulos {
     text-align: center;
     line-height: 3;
+    
 }
 p {
     font-size: 1.2em;
@@ -86,6 +97,7 @@ li,ul {
     font-size: 1.2em;
     text-align: center;
     line-height: 1.5;
+    
 }
 .img {
     text-align: center;
@@ -103,12 +115,14 @@ li,ul {
     flex-flow: row wrap;
     
 }
+    
 .navbar_link{
     padding-right: 8px;
     color: black;
     border-style: solid;
     background-color: rgb(255, 37, 153);
     display: inline-block;
+    
 }
 a:link{
     color:black;
@@ -209,6 +223,17 @@ width: 25%;
     opacity: 50%;
 }
 
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+#menu-toggle {
+    display: none;
+}
+
+
 @media only screen and (max-width: 300px) {
     .col-4 {
       width: 24.99999%;
@@ -218,9 +243,47 @@ width: 25%;
     .col-4 {
       width: 49.99999%;
     }
+
+    .menu-icon {
+        display: block;
+        padding-right: 10px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(65, 105, 225, 0.8 );
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+        padding: 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 15px 0;
+    }
+
+    nav ul li label {
+        /* width: 100%; */
+        display: block;
+    }
 }
+
+
 @media only screen and (max-width:500px) {
     .col-4{
         width: 100%;
     }
 }
+
