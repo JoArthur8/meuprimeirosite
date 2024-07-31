@@ -3,14 +3,17 @@
     src: url(../font/VCR_OSD_MONO_1.001.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     
     font-family: VCR, sans-serif;
     font-optical-sizing: auto; 
     font-style: normal;
-
     background-color: black;
     color: rgb(255, 37, 153);
+    padding-top: 100px;
 }
 img{
 width: 17%;
@@ -20,35 +23,50 @@ main{
     margin-left: auto;
     margin-right: auto;
     background-color: black;
-    text-align: justify;
     text-indent: 3%;
 }
 main nav{
     text-align: center;
     text-indent: 0%;
 }
-header{
-    padding: 3%;
-    text-align: center;
-    
+header{ /* novo */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    background-color: rgba(225, 65, 65, 0.4);
+    padding: 10px 150px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
 }
-nav{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 1%;
+nav ul { /* novo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a { /* novo */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover { /* novo */
+    background-color: #ff0000;
+    border-radius: 5px;
 }
 footer{
     padding: 3%;
 }
 section{
-
 padding: 1%;
 }
 
 .logo{
-    text-align: center;
     width: 50%;
-    margin-left:25%;
 }
 h1{
     text-align: center;
@@ -104,23 +122,13 @@ li,ul {
     width: 30%;
 
 }
-.navbar{
-    background-color: black;
-    color: rgb(255, 37, 153);
-    border-width: 3px;
-    border-color: rgb(255, 37, 153);
-    border-style: solid;
-    overflow: hidden;
-    display: flex;
-    flex-flow: row wrap;
-    
-}
+
     
 .navbar_link{
     padding-right: 8px;
     color: black;
     border-style: solid;
-    background-color: rgb(255, 37, 153);
+    background-color: none;
     display: inline-block;
     
 }
@@ -233,6 +241,36 @@ width: 25%;
     display: none;
 }
 
+nav ul { /* novo */
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: deeppink;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+    padding: 0;
+}
+
+#menu-toggle:checked + .menu-icon + ul {
+    display: flex;
+    color: aquamarine;
+}
+
+nav ul li {
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li a {
+    padding: 15px 0;
+}
+
+nav ul li label {
+    width: 100%;
+    display: block;
+}
 
 @media only screen and (max-width: 300px) {
     .col-4 {
@@ -252,40 +290,37 @@ width: 25%;
 }
 
 
+/* Media Query para telas menores */
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
         padding-right: 10px;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #000;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        z-index: 1000;
-        padding: 0;
-    }
-
-    #menu-toggle:checked + .menu-icon + ul {
-        display: flex;
-        color: aquamarine;
-    }
-
-    nav ul li {
-        text-align: center;
-        margin: 0;
-    }
-
-    nav ul li a {
-        padding: 15px 0;
+        padding-bottom: 50px;
     }
     
-    nav ul li label {
-        width: 100%;
-        display: block;
+    nav ul {
+        display: none; /* Esconde o menu em telas menores */
+    }
+    
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex; /* Mostra o menu em telas menores quando o ícone é clicado */
+    }
+}
+
+/* Media Query para telas maiores */
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none; /* Esconde o ícone de hambúrguer em telas maiores */
+    }
+    
+    nav ul {
+        display: flex; /* Mostra o menu em telas maiores */
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+    }
+    
+    nav ul li a {
+        padding: 10px 15px;
     }
 }

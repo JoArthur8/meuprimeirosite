@@ -10,6 +10,10 @@ body {
     background-repeat: no-repeat;
     color: rgb(255, 234, 8);
 }
+
+html {
+    scroll-behavior: smooth;
+}
 img{
 width: 17%;
 }
@@ -21,9 +25,17 @@ main{
     text-align: justify;
     overflow-wrap: break-word;
 }
-header{
-    padding: 3%;
-    text-align: center;
+header{ /* novo */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    background-color: rgba(225, 65, 65, 0.4);
+    padding: 10px 150px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
 }
 footer{
     padding: 3%;
@@ -113,3 +125,89 @@ p,li,ul {
      width: 32%;
     }
   }
+
+  nav ul { /* novo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a { /* novo */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover { /* novo */
+    background-color: #ff0000;
+    border-radius: 5px;
+}
+nav ul { /* novo */
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: deeppink;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+    padding: 0;
+}
+
+#menu-toggle:checked + .menu-icon + ul {
+    display: flex;
+    color: aquamarine;
+}
+
+nav ul li {
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li a {
+    padding: 15px 0;
+}
+
+nav ul li label {
+    width: 100%;
+    display: block;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        padding-right: 10px;
+        padding-bottom: 50px;
+    }
+    
+    nav ul {
+        display: none; /* Esconde o menu em telas menores */
+    }
+    
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex; /* Mostra o menu em telas menores quando o ícone é clicado */
+    }
+}
+
+/* Media Query para telas maiores */
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none; /* Esconde o ícone de hambúrguer em telas maiores */
+    }
+    
+    nav ul {
+        display: flex; /* Mostra o menu em telas maiores */
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+    }
+    
+    nav ul li a {
+        padding: 10px 15px;
+    }
+}
+#menu-toggle {
+    display: none;
+}
