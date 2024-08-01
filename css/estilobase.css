@@ -29,11 +29,12 @@ main nav{
     text-align: center;
     text-indent: 0%;
 }
-header{ /* novo */
+.Header{ /* novo */
     display: flex;
     align-items: center;
     justify-content: space-between;   
-    background-color: rgba(225, 65, 65, 0.4);
+    background-color: black;
+    opacity: 92%;
     padding: 10px 150px;
     position: fixed;
     top: 0;
@@ -48,15 +49,10 @@ nav ul { /* novo */
 }
 
 nav ul li a { /* novo */
-    color: white;
+    color: rgb(255, 37, 153);
     text-decoration: none;
     padding: 10px 15px;
     display: block;
-}
-
-nav ul li a:hover { /* novo */
-    background-color: #ff0000;
-    border-radius: 5px;
 }
 footer{
     padding: 3%;
@@ -66,7 +62,8 @@ padding: 1%;
 }
 
 .logo{
-    width: 50%;
+    width: 60%;
+    margin-left: 40%;
 }
 h1{
     text-align: center;
@@ -126,17 +123,22 @@ li,ul {
     
 .navbar_link{
     padding-right: 8px;
-    color: black;
+    color: rgb(255, 37, 153);
+    border-width: 3px;
     border-style: solid;
     background-color: none;
     display: inline-block;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    
     
 }
 a:link{
-    color:black;
+    color: rgb(255, 37, 153);
 }
 a:visited{
-    color:black;
+    color: rgb(255, 37, 153);
 }
 .linha{
     display: flex;
@@ -245,7 +247,6 @@ nav ul { /* novo */
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: deeppink;
     position: absolute;
     top: 60px;
     left: 0;
