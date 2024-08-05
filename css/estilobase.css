@@ -35,7 +35,8 @@ main nav{
     justify-content: space-between;   
     background-color: black;
     opacity: 92%;
-    padding: 10px 150px;
+    padding: 10px;
+    margin-left: 5%;
     position: fixed;
     top: 0;
     width: 100%;
@@ -236,7 +237,7 @@ width: 25%;
 .menu-icon {
     display: none;
     font-size: 30px;
-    color: white;
+    color: rgb(255, 37, 153);;
     cursor: pointer;
 }
 #menu-toggle {
@@ -292,7 +293,7 @@ nav ul li label {
 
 
 /* Media Query para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .menu-icon {
         display: block;
         padding-right: 10px;
@@ -309,7 +310,7 @@ nav ul li label {
 }
 
 /* Media Query para telas maiores */
-@media (min-width: 769px) {
+@media (min-width: 800px) {
     .menu-icon {
         display: none; /* Esconde o ícone de hambúrguer em telas maiores */
     }

@@ -25,12 +25,12 @@ main{
     text-align: justify;
     overflow-wrap: break-word;
 }
-header{ /* novo */
+.Header{ /* novo */
     display: flex;
     align-items: center;
     justify-content: space-between;   
-    background-color: rgba(225, 65, 65, 0.4);
-    padding: 10px 150px;
+    background-color: rgba(0, 193, 193, 0.4);
+    padding: 10px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -42,14 +42,13 @@ footer{
     background-color: blueviolet;
 }
 section{
-
-padding: 1%;
+    scroll-margin-top: 70px;
+    padding: 1%;
 }
 
 .logo{
-    justify-content: center;
-    margin-left: 25%;
-    width: 50%;
+    width: 60%;
+    margin-left: 40%;
 }
 h1{
     font-size: 3em;
@@ -133,21 +132,16 @@ p,li,ul {
 }
 
 nav ul li a { /* novo */
-    color: white;
+    color: rgb(255, 234, 8);
     text-decoration: none;
     padding: 10px 15px;
     display: block;
 }
 
-nav ul li a:hover { /* novo */
-    background-color: #ff0000;
-    border-radius: 5px;
-}
 nav ul { /* novo */
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: deeppink;
     position: absolute;
     top: 60px;
     left: 0;
@@ -158,6 +152,19 @@ nav ul { /* novo */
 #menu-toggle:checked + .menu-icon + ul {
     display: flex;
     color: aquamarine;
+}
+
+.navbar_link{
+    padding-right: 8px;
+    background-color: darkslategray;
+    color: rgb(255, 234, 8);
+    border-width: 3px;
+    border-style: solid;
+    background-color: none;
+    display: inline-block;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 nav ul li {
