@@ -29,7 +29,25 @@
       </header>
       <main>
         <section id="contato">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perspiciatis, aperiam quidem nesciunt quis, omnis nisi possimus, magnam id officiis necessitatibus quae a ratione? Ducimus eum dolores soluta ab iure?</p>
+         
+          <h1 class="titulos"> Crie seu Personagem</h1>
+
+          <form action="/action_page.php">
+            <label for="fname">Primerio Nome</label>
+            <input type="text" id="fname" name="firstname" placeholder="Seu nome..">
+        
+            <label for="lname">Sobrenome</label>
+            <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome..">
+        
+            <label for="ordo">Ordem</label>
+            <select id="ordo" name="ordo">
+              <option value="resistance">Resistência</option>
+              <option value="imperium">Império</option>
+              <option value="mercenary">Mercenário</option>
+            </select>
+          
+            <input type="submit" value="Submit">
+          </form>
 
         </section>
 
